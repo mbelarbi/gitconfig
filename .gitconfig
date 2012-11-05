@@ -1,0 +1,27 @@
+[alias]
+  a = add
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  pl = pull
+  ps = push
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --decorate --color
+  hist10 = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --decorate --color --max-count=10
+  type = cat-file -t
+  dump = cat-file -p
+  plud = pull upstream develop
+  psud = push upstream develop
+  plod = pull origin develop
+  psod = push origin develop
+[user]
+	name = Miloud Belarbi
+	email = miloud.belarbi@tangentlabs.co.uk
+[github]
+	user = mberlarbi
+	token = d42db83a8a58ec124c152edf6f220dea
+[color]
+	status = auto
+	branch = auto
+[diff]
+	external = /home/belarbim/diff.py
