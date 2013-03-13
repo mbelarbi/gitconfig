@@ -23,5 +23,19 @@
 [color]
 	status = auto
 	branch = auto
+[color "branch"]
+    current = green bold
+    local = green
+    remote = red Bold
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red
+[core]
+	editor = /usr/local/bin/vim
+[merge]
+	tool = opendiff
+[mergetool "opendiff"]
+  cmd = "opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\""
 [diff]
-	external = /home/belarbim/diff.py
+	external = /Users/mbelarbi/bin/git-diff-cmd.sh
