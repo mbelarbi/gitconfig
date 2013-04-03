@@ -6,8 +6,8 @@
   br = branch
   pl = pull
   ps = push
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --decorate --color
-  hist10 = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --decorate --color --max-count=10
+  hist = log --pretty=format:'%C(bold red)%h%Creset | %Cgreen%s%d  %C(bold blue)%ad (%ar) %C(yellow) [%an]' --graph --date=short --decorate --color
+  hist10 = log --pretty=format:'%C(bold red)%h%Creset | %Cgreen%s%d  %C(bold blue)%ad (%ar) %C(yellow) [%an]' --graph --date=short --decorate --color --max-count=10
   type = cat-file -t
   dump = cat-file -p
   plud = pull upstream develop
