@@ -32,7 +32,7 @@
     changed = yellow bold
     untracked = red
 [core]
-	editor = /usr/local/bin/vim
+	editor = /usr/bin/vim
 [merge]
 	tool = opendiff
 [mergetool "opendiff"]
