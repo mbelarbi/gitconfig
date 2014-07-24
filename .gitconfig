@@ -6,14 +6,10 @@
   br = branch
   pl = pull
   ps = push
-  hist = log --pretty=format:'%C(bold red)%h%Creset | %Cgreen%s%d  %C(bold blue)%ad (%ar) %C(yellow) [%an]' --graph --date=short --decorate --color
-  hist10 = log --pretty=format:'%C(bold red)%h%Creset | %Cgreen%s%d  %C(bold blue)%ad (%ar) %C(yellow) [%an]' --graph --date=short --decorate --color --max-count=10
+  hist-all = log --pretty=format:'%C(bold red)%h%Creset | %Cgreen%s%d  %C(bold blue)%ad (%ar) %C(yellow) [%an]' --graph --date=short --decorate --color
+  hist = log --pretty=format:'%C(bold red)%h%Creset | %Cgreen%s%d  %C(bold blue)%ad (%ar) %C(yellow) [%an]' --graph --date=short --decorate --color --max-count=10
   type = cat-file -t
   dump = cat-file -p
-  plud = pull upstream develop
-  psud = push upstream develop
-  plod = pull origin develop
-  psod = push origin develop
 [user]
 	name = Miloud Belarbi
 	email = miloud.belarbi@tangentlabs.co.uk
@@ -39,3 +35,6 @@
   cmd = "opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\""
 [diff]
 	external = /Users/mbelarbi/bin/git-diff-cmd.sh
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
