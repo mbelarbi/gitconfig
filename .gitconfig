@@ -6,13 +6,15 @@
   br = branch
   pl = pull
   ps = push
+  lt = describe --tags
   hist-all = log --pretty=format:'%C(bold red)%h%Creset | %Cgreen%s%d  %C(bold blue)%ad (%ar) %C(yellow) [%an]' --graph --date=short --decorate --color
   hist = log --pretty=format:'%C(bold red)%h%Creset | %Cgreen%s%d  %C(bold blue)%ad (%ar) %C(yellow) [%an]' --graph --date=short --decorate --color --max-count=10
   type = cat-file -t
   dump = cat-file -p
+  fo = fetch origin
 [user]
 	name = Miloud Belarbi
-	email = miloud.belarbi@tangentlabs.co.uk
+	email = miloud.belarbi@goodprint.com
 [github]
 	user = mberlarbi
 	token = d42db83a8a58ec124c152edf6f220dea
