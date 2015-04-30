@@ -6,6 +6,7 @@
   br = branch
   pl = pull
   ps = push
+  lc = rev-parse HEAD
   lt = describe --tags
   hist-all = log --pretty=format:'%C(bold red)%h%Creset | %Cgreen%s%d  %C(bold blue)%ad (%ar) %C(yellow) [%an]' --graph --date=short --decorate --color
   hist = log --pretty=format:'%C(bold red)%h%Creset | %Cgreen%s%d  %C(bold blue)%ad (%ar) %C(yellow) [%an]' --graph --date=short --decorate --color --max-count=10
