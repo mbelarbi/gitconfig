@@ -15,7 +15,7 @@
   fo = fetch origin
 [user]
 	name = Miloud Belarbi
-	email = miloud.belarbi@tangentsnowball.com
+	email = miloud.belarbi@essencedigital.com
 [github]
 	user = mberlarbi
 	token = d42db83a8a58ec124c152edf6f220dea
@@ -33,11 +33,9 @@
 [core]
 	editor = /usr/bin/vim
 [merge]
-	tool = opendiff
-[mergetool "opendiff"]
-  cmd = "opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\""
+	tool = meld
 [diff]
-	external = /Users/mbelarbi/bin/git-diff-cmd.sh
+	external = /home/miloudbelarbi/gitconfig/git-diff-cmd.sh
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
