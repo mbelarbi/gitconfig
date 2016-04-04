@@ -13,6 +13,7 @@
   type = cat-file -t
   dump = cat-file -p
   fo = fetch origin
+  cp = cherry-pick
 [user]
 	name = Miloud Belarbi
 	email = miloud.belarbi@essencedigital.com
