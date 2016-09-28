@@ -24,7 +24,7 @@
 [color "branch"]
     current = green bold
     local = green
-    remote = red Bold
+    remote = red bold
 [color "status"]
     added = green bold
     changed = yellow bold
