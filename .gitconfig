@@ -31,11 +31,11 @@
     untracked = red
 [core]
 	editor = /usr/bin/vim
-	excludesfile = /home/miloudbelarbi/.gitignore
+	excludesfile = /Users/miloud.belarbi/.gitignore
 [merge]
 	tool = meld
 [diff]
-	external = /home/miloudbelarbi/gitconfig/git-diff-cmd.sh
+	external = /Users/miloud.belarbi/gitconfig/git-diff-cmd.sh
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
