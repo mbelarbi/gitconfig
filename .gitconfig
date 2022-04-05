@@ -12,6 +12,7 @@
   hist = log --pretty=format:'%C(bold red)%h%Creset | %Cgreen%s%d  %C(bold blue)%ad (%ar) %C(yellow) [%an]' --graph --date=short --decorate --color --max-count=10
   fo = fetch origin
   cp = cherry-pick
+  opendiff = difftool --no-prompt --tool opendiff --dir-diff
 [user]
 	name = Miloud Belarbi
 	email = miloud.belarbi@groupm.tech
@@ -34,8 +35,8 @@
 	excludesfile = /Users/miloud.belarbi/.gitignore
 [merge]
 	tool = meld
-[diff]
-	external = /Users/miloud.belarbi/gitconfig/git-diff-cmd.sh
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[http]
+	cookiefile = /Users/miloud.belarbi/.gitcookies
