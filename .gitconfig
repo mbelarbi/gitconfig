@@ -15,7 +15,7 @@
   opendiff = difftool --no-prompt --tool opendiff --dir-diff
 [user]
 	name = Miloud Belarbi
-	email = miloud.belarbi@groupm.tech
+	email = miloud.belarbi@mediafuturesgroup.com
 [github]
 	user = mberlarbi
 	token = e8e9ea6791e05debba36274d63cee9d56e551de1
